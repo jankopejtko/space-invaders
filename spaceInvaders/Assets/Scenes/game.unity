@@ -272,7 +272,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854578597
 GameObject:
@@ -345,7 +345,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Skore:'
+  m_Text: 'Score:'
 --- !u!222 &854578600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -559,6 +559,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf04bb2af0ca8c04e8cf90c019a018d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1784939495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 901931863597474040, guid: 1ba159bda0a8c244098f2ce7481b8cc7, type: 3}
+  m_PrefabInstance: {fileID: 901931863312841573}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1784939503
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784939495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 00f59cf8d5e28d44eb73c9d413b313fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &901931863312841573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -576,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 901931863597473989, guid: 1ba159bda0a8c244098f2ce7481b8cc7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 901931863597473989, guid: 1ba159bda0a8c244098f2ce7481b8cc7, type: 3}
       propertyPath: m_LocalScale.x

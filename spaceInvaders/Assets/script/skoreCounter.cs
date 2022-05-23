@@ -13,6 +13,6 @@ public class skoreCounter : MonoBehaviour
     }
     private void Update()
     {
-        text.text = "Skore: " + skore;
+        text.text = "Score: " + skore;
     }
 }

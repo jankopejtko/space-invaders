@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7533278463655451622}
   - component: {fileID: -794477450891742453}
   - component: {fileID: 3425418464857077860}
+  - component: {fileID: 8981363159405783864}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -163,6 +164,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyBullet: {fileID: 1123085857918556690, guid: 613c35fd923169347b5b85bfa727188d, type: 3}
   fireRate: 1
+--- !u!95 &8981363159405783864
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6736221279489131776}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf12dce7210356948b39aef04d73cac5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6858244087198951258
 GameObject:
   m_ObjectHideFlags: 0

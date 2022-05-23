@@ -16,12 +16,12 @@ public class spawnNewWave : MonoBehaviour
     {
         enable = true;
     }
-    private void createWave() 
+    private void createWave()
     {
         if (enable == true) 
         {
             GameObject a = Instantiate(wave) as GameObject;
-            a.transform.position = new Vector2(screenBounds.x * - 1/2, screenBounds.y * 1);
+            a.transform.position = new Vector2(screenBounds.x * - 1/2 - 2f, screenBounds.y - 1f);
         }
         enable = false;
     }
