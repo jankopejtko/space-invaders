@@ -5,10 +5,11 @@ using UnityEngine;
 public class spawnNewWave : MonoBehaviour
 {
     public GameObject wave;
-    public static bool enable = true;
+    public static bool enable;
     private Vector2 screenBounds;
     private void Start()
     {
+        enable = true;
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         createWave();
     }
