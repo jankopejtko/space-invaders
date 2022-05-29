@@ -18,5 +18,9 @@ public class skoreCounter : MonoBehaviour
     private void Update()
     {
         text.text = "Score: " + skore;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            sceneLoader.loadScene("menu");
+        }
     }
 }

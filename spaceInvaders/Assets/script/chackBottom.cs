@@ -13,7 +13,6 @@ public class chackBottom : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("wave y pos: " + wave.transform.transform.position.y + "\n heigh: " + - (height / 2 - 3f));
         if (wave.transform.transform.position.y - 2f <= -height /2)
         {
             Destroy(wave);

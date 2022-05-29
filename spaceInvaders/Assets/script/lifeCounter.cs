@@ -2,30 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class lifeCounter : MonoBehaviour
 {
-    private static int numberOfLife = 3;
-    private GameObject lifeGUI;
-    private List<GameObject> lifeList = new List<GameObject>();
-    private void addLifeToList() 
+    public static int numberOfLife = 3;
+    public RawImage[] lifes;
+    private void Update()
     {
-        foreach (Transform child in transform)
+        deleteGUIlife(lifes);
+    }
+    private static void deleteGUIlife(RawImage[] imageList) 
+    {
+        for (int i = 0; i < imageList.Length; i++) 
         {
-            //lifeList.Add(transform);
+            if(i < numberOfLife) 
+            {
+                imageList[i].gameObject.SetActive(true);
+            }
+            else 
+            {
+                imageList[i].gameObject.SetActive(false);
+            }
         }
-    }
-    void Start()
-    {
-        
-    }
-    public void deductLife() 
-    {
-        deleteGUIlife();
-        numberOfLife--;
-    }
-    private void deleteGUIlife() 
-    {
     }
     public static void chackDead()
     {
